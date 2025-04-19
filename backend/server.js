@@ -28,7 +28,7 @@ const server = app.listen(port,'0.0.0.0', console.log("server is running at port
 
 const io = require("socket.io")(server, {
     cors: {
-        origin: "https://chat-app-1-pnwg.onrender.com/signup", 
+        origin: "https://chat-app-1-pnwg.onrender.com", 
     },
 });
 
