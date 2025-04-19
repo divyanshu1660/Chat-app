@@ -23,7 +23,7 @@ app.use("/api/chat", chatRoutes);
 app.use("/api/message", messageRoutes);
 
 const port = process.env.PORT || 10000
-const server = app.listen(port, console.log("server is running at port = ", port));
+const server = app.listen(port,'0.0.0.0', console.log("server is running at port = ", port));
 
 const io = require("socket.io")(server, {
     cors: {
