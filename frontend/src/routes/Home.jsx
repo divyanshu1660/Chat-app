@@ -5,7 +5,7 @@ import { io } from "socket.io-client";
 import * as types from "../redux/appReducer/actionType";
 import { useDispatch } from "react-redux";
 
-const ENDPOINT="http://localhost:8080"
+const ENDPOINT="https://chat-app-9j0x.onrender.com/"
 
 const Home = () => {
   const [socketConnected, setSocketConnected] = useState(false);
