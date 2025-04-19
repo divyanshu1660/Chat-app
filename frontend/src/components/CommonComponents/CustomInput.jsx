@@ -16,7 +16,7 @@ const CustomInput = ({type, label, value, onChange, name, placeholder, required 
         onChange={onChange}
         name={name}
         id={name}
-        className="w-full bg-primary-50 border border-primary-300 text-primary-900 sm:text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 p-2.5 "
+        className="w-full bg-primary-50 border border-primary-300 text-primary-900 sm:text-sm  focus:ring-primary-500 focus:border-primary-500 p-2.5 "
         placeholder={placeholder}
         required={required}
       />

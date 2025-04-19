@@ -23,11 +23,11 @@ app.use("/api/chat", chatRoutes);
 app.use("/api/message", messageRoutes);
 
 const port = process.env.PORT || 8001
-const server = app.listen(port, console.log("server is running at post = ", port));
+const server = app.listen(port, console.log("server is running at port = ", port));
 
 const io = require("socket.io")(server, {
     cors: {
-        origin: "https://chat-app-ca.netlify.app", 
+        origin: "http://localhost:3000", 
     },
 });
 
