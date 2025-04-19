@@ -15,6 +15,7 @@ app.use(cors());
 app.use(express.json());
 
 app.get("/", (req, res) => {
+    res.send('hello its working');    
     console.log("welcome to chat app");
 })
 
