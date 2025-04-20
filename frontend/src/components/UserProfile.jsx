@@ -96,7 +96,7 @@ export default function UserProfile() {
           <p className="text-sm mb-2">{userData.email}</p>
 
           {/* input button */}
-          <UploadImage handelFileUpload={handelFileUpload} />
+          {/* <UploadImage handelFileUpload={handelFileUpload} /> */}
 
           {/* logout button */}
           <button onClick={(e) => { handelLogout() }} className="cursor-pointer w-full py-2 px-4 text-sm font-bold hover:bg-primary-800 hover:text-primary-50">
