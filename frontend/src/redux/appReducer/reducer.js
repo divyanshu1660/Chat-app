@@ -304,11 +304,11 @@ export const reducer = (state = initialState, action) => {
                 ...state,
                 getMessageData: [...state.getMessageData, payload],
             };
-        case types.WEB_SOCKET_NOTIFICATION_RECEIVED:
-            return {
-                ...state,
-                notficationsMessages: [...state.notficationsMessages, payload],
-            };
+        // case types.WEB_SOCKET_NOTIFICATION_RECEIVED:
+        //     return {
+        //         ...state,
+        //         notficationsMessages: [...state.notficationsMessages, payload],
+        //     };
 
 
         default:

@@ -24,7 +24,7 @@ export default function Navbar() {
           </section>
 
           <section className="flex flex-wrap gap-4 items-center">
-            <Notification />
+            {/* <Notification /> */}
             <UserProfile />
           </section>
         </div>

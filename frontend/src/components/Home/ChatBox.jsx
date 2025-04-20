@@ -15,7 +15,7 @@ export default function ChatBox() {
   const sendMessageObj = useSelector((state) => state.appReducer.sendMessageObj);
   const sendMessageProcessing = useSelector((state) => state.appReducer.sendMessageProcessing);
 
-  const notficationsMessages = useSelector((state) => state.appReducer.notficationsMessages);
+  // const notficationsMessages = useSelector((state) => state.appReducer.notficationsMessages);
   const getMessageProcessing = useSelector((state) => state.appReducer.getMessageProcessing);
   const getMessageData = useSelector((state) => state.appReducer.getMessageData);
   const webSocket = useSelector((state) => state.appReducer.webSocket)
@@ -46,7 +46,7 @@ export default function ChatBox() {
     if (!sendMessageProcessing && !sendMessageFail && sendMessageSuccess) {
       setUserInput("");
       webSocket.emit("new message", sendMessageObj);
-      dispatch(setWebSocketReceivedMessage(getMessageData, sendMessageObj, notficationsMessages, selectedUserForChat));
+      dispatch(setWebSocketReceivedMessage(getMessageData, sendMessageObj, selectedUserForChat));
     }
 
     if (!sendMessageProcessing && sendMessageFail && !sendMessageSuccess) {
@@ -56,7 +56,7 @@ export default function ChatBox() {
 
   useEffect(() => {
     const handleNewMessageReceived = (newMessageRec) => {
-      dispatch(setWebSocketReceivedMessage(getMessageData, newMessageRec, notficationsMessages, selectedUserForChat));
+      dispatch(setWebSocketReceivedMessage(getMessageData, newMessageRec,  selectedUserForChat));
     };
 
     webSocket.on("message received", handleNewMessageReceived);
