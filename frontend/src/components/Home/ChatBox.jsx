@@ -114,9 +114,9 @@ export default function ChatBox() {
             className="border border-gray-300 bg-primary-50 text-primary-900 font-semibold sm:text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 pr-10 "
             placeholder="Type your message..."
           />
-          <button type="button" className="absolute inset-y-0 right-10 px-8 py-2.7 text-primary-800 focus:outline-none">
+          {/* <button type="button" className="absolute inset-y-0 right-10 px-8 py-2.7 text-primary-800 focus:outline-none">
             <BsEmojiSmile className="w-5 h-5" />
-          </button>
+          </button> */}
           <button
             disabled={sendMessageProcessing}
             type="button"
